@@ -54,6 +54,12 @@ async def process_help_command(message: types.Message):
     await message.reply("To start transferring process send /start_transfer and then send two pictures.",
                         reply_markup=kb_help_and_start)
 
+@dp.message_handler(commands=['help'], state=WaitForPic.waiting_for_type_of_transfer)
+async def get_transfer_type(message: types.Message):
+    await message.reply("Now you need to choose type of style - your one /my_style or from Monet pictures /Monet",
+                        reply_markup=kb_choose_style)
+    await WaitForPic.waiting_for_type_of_transfer.set()
+
 
 @dp.message_handler(commands=['help'], state=[WaitForPic.waiting_for_content_monet, WaitForPic.waiting_for_content_custom])
 async def process_help_command(message: types.Message):
