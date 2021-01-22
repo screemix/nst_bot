@@ -9,7 +9,12 @@ GAN models were used from original implementation from [this repository](https:/
 
 Telegram alias for this bot is @neural_artist_bot. Feel free to launch it. All instructions provided with every step you make. 
 
-![](https://i.imgur.com/49UewUj.png)
+![](https://i.imgur.com/lYREU3V.png)
+![](https://i.imgur.com/B9ZhSpR.png)
+![](https://i.imgur.com/xfLNWic.png)
+
+
+
 
 ## How to launch
 You can find docker image for this project [here](https://hub.docker.com/repository/docker/screemix/nst_bot). Install and configure Docker and then run the following command in the terminal:
